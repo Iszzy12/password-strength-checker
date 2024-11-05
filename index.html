@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Test</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="password-container">
+            <label for="password-field">Enter password here</label>
+            <input id="password-field" placeholder="Enter your password here" type="password">
+            <button type="submit" id="submit">Enter</button>
+            <button type="button" id="toggle-visibility">Show</button> <!-- Toggle visibility button -->
+        </div>
+        
+        <!-- Strength Meter -->
+        <div id="strength-meter-container">
+            <label for="strength-meter">Password Strength</label>
+            <progress id="strength-meter" max="100" value="0"></progress>
+            <div id="strength-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
